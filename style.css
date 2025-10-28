@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', 'Inter', sans-serif;
+            background-color: #f7f9fb; /* 淺灰色背景 */
+        }
+        .text-primary { color: #2563eb; } /* 藍色主色 */
+        .bg-secondary { background-color: #e0f2fe; } /* 淺藍色輔色 */
+        /* 用於突顯所有關鍵技術和重點詞彙 (此處為員工學習重點，非測驗答案提示) */
+        .highlight-tech {
+            background-color: #fef3c7; /* 淺黃色背景 */
+            color: #b45309; /* 深橘色文字 */
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        /* Modal for Quiz Results */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 50;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* 測驗視覺回饋 */
+        .quiz-question.correct {
+            border-left: 5px solid #10b981; /* 綠線 */
+            padding-left: 1rem;
+            transition: all 0.3s;
+        }
+        .quiz-question.incorrect {
+            border-left: 5px solid #ef4444; /* 紅線 */
+            padding-left: 1rem;
+            transition: all 0.3s;
+        }
+        .user-correct {
+            background-color: #d1fae5 !important; /* 淺綠色背景 */
+            font-weight: 600;
+        }
+        .user-incorrect {
+            background-color: #fee2e2 !important; /* 淺紅色背景 */
+            font-weight: 600;
+        }
+        .correct-answer-reveal {
+            background-color: #a7f3d0 !important; /* 揭示正確答案的綠色 */
+            font-weight: bold;
+        }
