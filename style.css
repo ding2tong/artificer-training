@@ -60,3 +60,29 @@
             background-color: #a7f3d0 !important; /* 揭示正確答案的綠色 */
             font-weight: bold;
         }
+
+/* Image Modal Styles */
+.modal-image {
+    max-width: 90%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

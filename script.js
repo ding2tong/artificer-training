@@ -128,3 +128,22 @@
                 button.classList.remove('bg-gray-200');
             }
         }
+
+/**
+ * Opens the image modal and displays the clicked image.
+ * @param {string} src - The source of the image to display.
+ */
+function openImageModal(src) {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+    modal.style.display = 'flex';
+    modalImg.src = src;
+}
+
+/**
+ * Closes the image modal.
+ */
+function closeImageModal() {
+    const modal = document.getElementById('image-modal');
+    modal.style.display = 'none';
+}
